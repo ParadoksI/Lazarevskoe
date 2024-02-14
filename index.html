@@ -1,14 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/reset.css"> 
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+    <link rel="stylesheet" href="./assets/css/root.css">
+
 </head>
+
 <body>
+    <div class="container">
+
+        <header class="header">
+
+            <div class="header__geolocation">
+                <img class="header__logo" src="./assets/image/logo.svg" alt="logo">
+
+
+                <div class="header__location-selector" >
+                    <img class="header__geo-img" src="./assets/image/location.svg" alt="location">
+                    <select class="header__geo ">
+                        <option value="">Лазаревское</option>
+                    </select>
+                </div>
+
+
+                
+            </div>
+            <button class="header__button-object button-green">Добавить объект</button>
+
+            <div class="header__icons-authentication">
+                <div class="header__icons">
+                    <a class="header__comparison" href="">
+                        <img class="header__comparison-img" src="./assets/image/comparison.svg" alt="comparison">
+                    </a>
+                    <a class="header__like" href="">
+                        <img class="header__like-img" src="./assets/image/like.svg" alt="like">
+                    </a>
+                </div>
+                <div class="header__authentication">
+                    <button class="header__login-button button-green">Войти</button>
+                    <button class="header__registration-button button-green">Зарегистрироваться</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <nav class="nav">
+
+        <div class="container" >
+
+            <div class="navbar" >
+                
+                <button class="nav__menu">
+                    <img src="./assets/image/burger-menu.svg" alt="" class="menu-icon">
+                    <img src="./assets/image/cross.svg" alt="" class="close-icon">
+                </button>
+                
+                <div class="nav__icons">
+                    <a class="nav__comparison" href="">
+                        <img class="nav__comparison-img" src="./assets/image/comparison-white.svg" alt="comparison">
+                    </a>
+                    <a class="nav__like" href="">
+                        <img class="nav__like-img" src="./assets/image/like-white.svg" alt="like">
+                    </a>
+                </div>
+
+                <div class="nav__user">
+
+                    <button class="nav__user-button">
+                        <img src="./assets/image/user.svg" alt="user">
+                    </button>
+
+                    <div class="nav__authentication">
+                        <div>
+                            <button class="nav__login-button button-green">Войти</button>
+                            <p>или</p>
+                            <button class="nav__registration-button button-green">Зарегистрироваться</button>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <ul class="nav__list">
+                
+                <li class="nav__item"><a href="#">Гостевые дома</a></li>
+                <li class="nav__item"><a href="#">Гостиницы</a></li>
+                <li class="nav__item"><a href="#">Отели</a></li>
+                <li class="nav__item"><a href="#">Частный сектор</a></li>
+                <li class="nav__item"><a href="#">Квартиры</a></li>
+                <li class="nav__item"><a href="#">Санатории</a></li>
+                <li class="nav__item"><a href="#">Недвижимость</a></li>
+                <li class="nav__item"><a href="#">Экскурсии</a></li>
+                <button class="nav__button-object button-blue ">Добавить объект</button>
+                
+            </ul>
+        </div>
+
+    </nav>
+
+    <section class="vacation"> 
+        <div class="container">
+            <div class="vacation__text" >
+                <h1>Отдых в Лазаревском <br>
+                    Жильё без посредников
+                </h1>
+                <p>Здесь вы найдёте квартиры и частные дома, <br>
+                     гостиницы, отели, гостевые дома без посредников!
+                </p>
+            </div>
+            <div class="vacation__inputs" >
+                <div class="vacation__input" >
+                    <h1>Заезд</h1>
+                    <div>1 апр.</div>
+                </div>
+                <div class="vacation__input">
+                    <h1>Выезд</h1>
+                    <div>30 апр.</div>
+                </div>
+                <div class="vacation__input">
+                    <h1>Гостей</h1>
+                    <div>2 Гостей</div>
+                </div>
+                <button class="vacation__button button-blue ">Найти</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="choice">
+        <div class="choice__container container">
+            <h1 class="choice__title">Лучший выбор</h1>
+            <p class="choice__subtitle">Гостиницы и дома для отдыха</p>
+                <div class="choice__list" >
+                    <div class="choice-item" >
+                        <div class="choice__content" >
+                            <div class="choice-item__location">
+                                <img class="choice-item__geo-img" src="./assets/image/geo-choic.svg" alt="location">
+                                <span class="choice-item__location-name">Лазаревское</span>
+                            </div>
+                            <div class="choice-item__icons">
+                                <img class="choice-item__icon" src="./assets/image/comparison-choice.svg" alt="">
+                                <img class="choice-item__icon" src="./assets/image/like-choice.svg" alt="">
+                            </div>
+                        </div>
+                        <img class="choice__image" src="./assets/image/choice-cart-img.svg" alt="">
+                        <div class="choice-item-details">
+                            <div class="choice-item-details__rating">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                            </div>
+                            <p class="choice-item-details__reviews">Отзывы <span>238</span></p>
+                        </div>
+                        <p class="choice__name">Частный сектор «Кипарис»</p>
+                        <div class="choice-item-amenities">
+                            <p class="choice-item-amenities__item">Автостоянка</p>
+                            <p class="choice-item-amenities__item">Бассейн</p>
+                            <p class="choice-item-amenities__item">Детская площадка</p>
+                            <p class="choice-item-amenities__item">Wi-Fi</p>
+                        </div>
+                        <p class="choice__price">от 800 ₽ за сутки</p>
+                        <button class="choice__button button-green ">Подробнее</button>
+                    </div>
+                    <div class="choice-item" >
+                        <div class="choice__content" >
+                            <div class="choice-item__location">
+                                <img class="choice-item__geo-img" src="./assets/image/geo-choic.svg" alt="location">
+                                <span class="choice-item__location-name">Лазаревское</span>
+                            </div>
+                            <div class="choice-item__icons">
+                                <img class="choice-item__icon" src="./assets/image/comparison-choice.svg" alt="">
+                                <img class="choice-item__icon" src="./assets/image/like-choice.svg" alt="">
+                            </div>
+                        </div>
+                        <img class="choice__image" src="./assets/image/choice-cart-img.svg" alt="">
+                        <div class="choice-item-details">
+                            <div class="choice-item-details__rating">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                            </div>
+                            <p class="choice-item-details__reviews">Отзывы <span>238</span></p>
+                        </div>
+                        <p class="choice__name">Частный сектор «Кипарис»</p>
+                        <div class="choice-item-amenities">
+                            <p class="choice-item-amenities__item">Автостоянка</p>
+                            <p class="choice-item-amenities__item">Бассейн</p>
+                            <p class="choice-item-amenities__item">Детская площадка</p>
+                            <p class="choice-item-amenities__item">Wi-Fi</p>
+                        </div>
+                        <p class="choice__price">от 800 ₽ за сутки</p>
+                        <button class="choice__button button-green">Подробнее</button>
+                    </div>
+                    <div class="choice-item" >
+                        <div class="choice__content" >
+                            <div class="choice-item__location">
+                                <img class="choice-item__geo-img" src="./assets/image/geo-choic.svg" alt="location">
+                                <span class="choice-item__location-name">Лазаревское</span>
+                            </div>
+                            <div class="choice-item__icons">
+                                <img class="choice-item__icon" src="./assets/image/comparison-choice.svg" alt="">
+                                <img class="choice-item__icon" src="./assets/image/like-choice.svg" alt="">
+                            </div>
+                        </div>
+                        <img class="choice__image" src="./assets/image/choice-cart-img.svg" alt="">
+                        <div class="choice-item-details">
+                            <div class="choice-item-details__rating">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                            </div>
+                            <p class="choice-item-details__reviews">Отзывы <span>238</span></p>
+                        </div>
+                        <p class="choice__name">Частный сектор «Кипарис»</p>
+                        <div class="choice-item-amenities">
+                            <p class="choice-item-amenities__item">Автостоянка</p>
+                            <p class="choice-item-amenities__item">Бассейн</p>
+                            <p class="choice-item-amenities__item">Детская площадка</p>
+                            <p class="choice-item-amenities__item">Wi-Fi</p>
+                        </div>
+                        <p class="choice__price">от 800 ₽ за сутки</p>
+                        <button class="choice__button button-green">Подробнее</button>
+                    </div>
+                    <div class="choice-item" >
+                        <div class="choice__content" >
+                            <div class="choice-item__location">
+                                <img class="choice-item__geo-img" src="./assets/image/geo-choic.svg" alt="location">
+                                <span class="choice-item__location-name">Лазаревское</span>
+                            </div>
+                            <div class="choice-item__icons">
+                                <img class="choice-item__icon" src="./assets/image/comparison-choice.svg" alt="">
+                                <img class="choice-item__icon" src="./assets/image/like-choice.svg" alt="">
+                            </div>
+                        </div>
+                        <img class="choice__image" src="./assets/image/choice-cart-img.svg" alt="">
+                        <div class="choice-item-details">
+                            <div class="choice-item-details__rating">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                                <img class="choice-item-details__star" src="./assets/image/star.svg" alt="">
+                            </div>
+                            <p class="choice-item-details__reviews">Отзывы <span>238</span></p>
+                        </div>
+                        <p class="choice__name">Частный сектор «Кипарис»</p>
+                        <div class="choice-item-amenities">
+                            <p class="choice-item-amenities__item">Автостоянка</p>
+                            <p class="choice-item-amenities__item">Бассейн</p>
+                            <p class="choice-item-amenities__item">Детская площадка</p>
+                            <p class="choice-item-amenities__item">Wi-Fi</p>
+                        </div>
+                        <p class="choice__price">от 800 ₽ за сутки</p>
+                        <button class="choice__button button-green">Подробнее</button>
+                    </div>
+                </div>
+                <div class="choice__arrow-buttons" >
+                    <button class="choice__button-left" ><img src="./assets/image/arrow-right.svg" alt=""></button>
+                    <button class="choice__button-right" ><img src="./assets/image/arrow-left.svg" alt=""></button>
+                </div>
+            
+        </div>
+    </section>
     
+    <script src="./assets/js/burger-menu.js" ></script>
+    <script src="./assets/js/user-button.js" ></script>
 </body>
+
 </html>
