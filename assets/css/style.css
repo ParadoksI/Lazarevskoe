@@ -1844,28 +1844,28 @@ a {
 /* ========================================================== CART ========================================================  */
 /* PK */
 @media only screen and (min-width:1200px) {
-    .cart {
+    .card {
         margin-top: 40px;
     }
     
-    .cart-link {
+    .card-link {
         color: #222222;
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
     }
     
-    .cart-item {
+    .card-item {
         max-width: 800px;
     
     }
     
-    .cart__main {
+    .card__main {
         display: flex;
         gap: 30px;
     }
     
-    .cart-item__title {
+    .card-item__title {
         margin-top: 40px;
         color: var(--blue);
         font-size: 40px;
@@ -1873,7 +1873,7 @@ a {
         line-height: 49px;
     }
     
-    .cart-item__details {
+    .card-item__details {
         margin-top: 21px;
         margin-bottom: 20px;
         display: flex;
@@ -1881,74 +1881,74 @@ a {
         justify-content: space-between;
     }
     
-    .cart-item__details p {
+    .card-item__details p {
         color: #222222;
         font-size: 10px;
         line-height: 12px;
         font-weight: 400;
     }
     
-    .cart-item__details-testimonial,
-    .cart-item__details-street {
+    .card-item__details-testimonial,
+    .card-item__details-street {
         font-size: 12px;
         line-height: 14px;
     }
     
-    .cart-item__details-testimonial {
+    .card-item__details-testimonial {
         margin-right: 5px;
     }
     
-    .cart-item__details-street {
+    .card-item__details-street {
         margin-right: 16px;
     }
     
-    .cart-item__details-map {
+    .card-item__details-map {
         margin-right: 37px;
     }
     
-    .cart-item__details-comparison-text {
+    .card-item__details-comparison-text {
         margin-right: 29px;
     }
     
-    .cart-item__details-comparison-item p {
+    .card-item__details-comparison-item p {
         margin-right: 29px;
     }
     
-    .cart-item__details-like-item p {
+    .card-item__details-like-item p {
         margin-right: 23px;
     }
     
-    .cart-item__details div {
+    .card-item__details div {
         display: flex;
         align-items: center;
     }
     
-    .cart-item__details-like {
+    .card-item__details-like {
         width: 12px;
         height: 12px;
         margin-right: 5px;
     }
     
-    .cart-item__details-geo,
-    .cart-item__details-comparison {
+    .card-item__details-geo,
+    .card-item__details-comparison {
         width: 15px;
         height: 15px;
     }
     
-    .cart-item__details-comparison {
+    .card-item__details-comparison {
         margin-right: 10px;
     }
     
-    .cart-item__details-geo {
+    .card-item__details-geo {
         margin-right: 10px;
     }
     
-    .cart-item__rating img {
+    .card-item__rating img {
         width: 15px;
         height: 15px;
     }
     
-    .cart-navigation__item {
+    .card-navigation__item {
         position: relative;
         width: 800px;
         height: 530px;
@@ -1956,15 +1956,15 @@ a {
         background-color: #fff;
     }
     
-    .cart-navigation__details {}
+    .card-navigation__details {}
     
-    .cart-navigation__details-img-block {
+    .card-navigation__details-img-block {
         width: 485px;
         height: 530px;
         margin: 0 auto;
     }
     
-    .cart-navigation__details-counter {
+    .card-navigation__details-counter {
         text-align: center;
         position: absolute;
         align-items: center;
@@ -1978,21 +1978,21 @@ a {
         border-radius: 20px 0 20px 0;
     }
     
-    .cart-navigation__details-counter p {
+    .card-navigation__details-counter p {
         color: var(--blue);
         font-size: 15px;
         font-weight: 700;
         line-height: 18px;
     }
     
-    .cart-navigation__buttons {
+    .card-navigation__buttons {
         display: flex;
         justify-content: center;
         gap: 20px;
         margin-top: 20px;
     }
     
-    .cart-navigation__buttons button {
+    .card-navigation__buttons button {
         background-color: #fff;
         border-radius: 50%;
         width: 42px;
@@ -2000,11 +2000,11 @@ a {
         box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
     }
     
-    .cart-navigation__buttons img {
+    .card-navigation__buttons img {
         width: 18px;
     }
     
-    .cart-navigation__list {
+    .card-navigation__list {
         margin-top: 80px;
         max-width: 800px;
         display: grid;
@@ -2012,21 +2012,21 @@ a {
         gap: 10px;
     }
     
-    .cart-navigation__list li:hover {
+    .card-navigation__list li:hover {
         border: solid 3px #2EBDE1;
         width: 100%;
     }
     
-    .cart-navigation__list img {
+    .card-navigation__list img {
         overflow: hidden;
         border-radius: 15px;
     }
     
-    .cart-navigation__list li {
+    .card-navigation__list li {
         border-radius: 15px;
     }
     
-    .cart-navigation__text {
+    .card-navigation__text {
         margin-top: 40px;
         max-width: 550px;
         font-size: 18px;
@@ -2034,14 +2034,14 @@ a {
         font-weight: 400;
     }
     
-    .cart__info {
+    .card__info {
         margin-left: auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
     
-    .cart__contacts {
+    .card__contacts {
         display: flex;
         flex-direction: column;
         padding: 20px;
@@ -2052,26 +2052,26 @@ a {
         border-radius: 20px;
     }
     
-    .cart__contacts h1 {
+    .card__contacts h1 {
         font-size: 15px;
         font-weight: 700;
         line-height: 18px;
         margin-bottom: 9px;
     }
     
-    .cart__contacts div {
+    .card__contacts div {
         display: flex;
         flex-direction: column;
         
         gap: 12px;
     }
     
-    .cart__contacts button {
+    .card__contacts button {
         max-width: 171px;
         height: 41px;
     }
     
-    .cart__contacts-name {
+    .card__contacts-name {
         margin-top: 11px;
         font-size: 15px;
         font-weight: 400;
@@ -2079,21 +2079,21 @@ a {
     
     }
     
-    .cart__contacts-email {
+    .card__contacts-email {
         margin-top: 20px;
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
     }
     
-    .cart__contacts-marking {
+    .card__contacts-marking {
         margin-top: 10px;
         font-size: 10px;
         font-weight: 400;
         line-height: 12px;
     }
     
-    .cart__contacts-phone {
+    .card__contacts-phone {
         max-width: 200px;
         margin-top: 30px;
         font-size: 12px;
@@ -2101,7 +2101,7 @@ a {
         line-height: 15px;
     }
     
-    .cart__characteristics {
+    .card__characteristics {
         display: flex;
         flex-direction: column;
         padding: 22px 9px;
@@ -2112,25 +2112,25 @@ a {
         border-radius: 20px;
     }
     
-    .cart__characteristics h1 {
+    .card__characteristics h1 {
         font-size: 15px;
         font-weight: 700;
         line-height: 18px;
         margin-bottom: 20px;
     }
     
-    .cart__characteristics li {
+    .card__characteristics li {
         display: flex;
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
     }
     
-    .cart__characteristics span {
+    .card__characteristics span {
         margin-left: auto;
     }
     
-    .cart__services {
+    .card__services {
         display: flex;
         flex-direction: column;
         padding: 20px 20px 10px 20px;
@@ -2141,21 +2141,21 @@ a {
         border-radius: 20px;
     }
     
-    .cart__services h1 {
+    .card__services h1 {
         font-size: 15px;
         font-weight: 700;
         line-height: 18px;
         margin-bottom: 20px;
     }
     
-    .cart__services li {
+    .card__services li {
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
         max-width: 250px;
     }
     
-    .cart__services button {
+    .card__services button {
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -2164,42 +2164,42 @@ a {
         
     }
 
-    .cart-item__details-street-mobile {
+    .card-item__details-street-mobile {
         display: none;
     }
 
-    .cart-item__details-comparison-item-mobile {
+    .card-item__details-comparison-item-mobile {
         display: none;
     }
 
-    .cart-item__details-geo-mobile {
+    .card-item__details-geo-mobile {
         display: none;
     }
 }
 
 /* MOBILE */
 @media only screen and (max-width: 1200px) {
-    .cart {
+    .card {
         margin-top: 40px;
     }
     
-    .cart-link {
+    .card-link {
         color: #222222;
         font-size: 12px;
         font-weight: 400;
         line-height: 14px;
     }
     
-    .cart-item {
+    .card-item {
         max-width: 800px;
     
     }
     
-    .cart__main {
+    .card__main {
         
     }
     
-    .cart-item__title {
+    .card-item__title {
         margin-top: 40px;
         color: var(--blue);
         font-size: 40px;
@@ -2207,7 +2207,7 @@ a {
         line-height: 49px;
     }
     
-    .cart-item__details {
+    .card-item__details {
         margin-top: 21px;
         margin-bottom: 20px;
         display: flex;
@@ -2215,90 +2215,90 @@ a {
         justify-content: end;
     }
     
-    .cart-item__details p {
+    .card-item__details p {
         color: #222222;
         font-size: 10px;
         line-height: 12px;
         font-weight: 400;
     }
     
-    .cart-item__details-testimonial
+    .card-item__details-testimonial
     {
         font-size: 12px;
         line-height: 14px;
     }
     
-    .cart-item__details-testimonial {
+    .card-item__details-testimonial {
         margin-right: 5px;
     }
     
-    .cart-item__details-street {
+    .card-item__details-street {
         display: none;
     }
     
-    .cart-item__details-map {
+    .card-item__details-map {
         display: none;
     }
     
-    .cart-item__details-comparison-text {
+    .card-item__details-comparison-text {
         display: none;
     }
     
-    .cart-item__details-comparison-item p {
+    .card-item__details-comparison-item p {
         display: none;
     }
     
-    .cart-item__details-like-item p {
+    .card-item__details-like-item p {
         display: none;
     }
     
-    .cart-item__details div {
+    .card-item__details div {
         display: flex;
         align-items: center;
     }
     
-    .cart-item__details-like {
+    .card-item__details-like {
         display: none;
     }
     
-    .cart-item__details-geo,
-    .cart-item__details-comparison {
+    .card-item__details-geo,
+    .card-item__details-comparison {
         display: none;
     }
     
-    .cart-item__details-comparison {
+    .card-item__details-comparison {
         display: none;
     }
     
-    .cart-item__details-geo {
+    .card-item__details-geo {
         display: none;
     }
     
-    .cart-item__rating img {
+    .card-item__rating img {
         width: 15px;
         height: 15px;
     }
     
-    .cart-navigation__item {
+    .card-navigation__item {
         position: relative;
         border-radius: 10px;
         background-color: #fff;
     }
     
-    .cart-navigation__details {}
+    .card-navigation__details {}
     
-    .cart-navigation__details-img-block {
+    .card-navigation__details-img-block {
         width: 100%;
         height: 240px;
         margin: 0 auto;
         overflow: hidden;
     }
 
-    .cart-navigation__details-img-block img {
+    .card-navigation__details-img-block img {
         border-radius: 10px;
     }
     
-    .cart-navigation__details-counter {
+    .card-navigation__details-counter {
         text-align: center;
         position: absolute;
         align-items: center;
@@ -2312,7 +2312,7 @@ a {
         border-radius: 10px 0 10px 0;
     }
 
-    .cart-item__details-comparison-item-mobile {
+    .card-item__details-comparison-item-mobile {
         text-align: center;
         position: absolute;
         align-items: center;
@@ -2328,54 +2328,54 @@ a {
         justify-content: center;
         align-items: center;
     }
-    .cart-item__details-like-mobile,
-    .cart-item__details-comparison-mobile {
+    .card-item__details-like-mobile,
+    .card-item__details-comparison-mobile {
         width: 15px;
         
         gap: 13px;
     }
 
-    .cart-navigation__details-img-mobile {
+    .card-navigation__details-img-mobile {
         margin-top: 10px;
         display: flex;
         gap: 5px;
     }
 
-    .cart-item__details-geo-mobile {
+    .card-item__details-geo-mobile {
         width: 10px;
         height: 10px;
     }
 
-    .cart-item__details-street-mobile {
+    .card-item__details-street-mobile {
        font-size: 9px;
        font-weight: 600;
        line-height: 11px;
     } 
     
-    .cart-navigation__details-counter p {
+    .card-navigation__details-counter p {
         color: var(--blue);
         font-size: 15px;
         font-weight: 700;
         line-height: 18px;
     }
     
-    .cart-navigation__buttons {
+    .card-navigation__buttons {
         display: none;
         
     }
     
-    .cart-navigation__list {
+    .card-navigation__list {
         display: none;
     }
     
-    .cart-navigation__text {
+    .card-navigation__text {
         margin-top: 20px;
         font-size: 15px;
         line-height: 18px;
         font-weight: 400;
     }
     
-    .cart__info {
+    .card__info {
         margin-left: auto;
         display: flex;
         
@@ -2383,7 +2383,7 @@ a {
         gap: 20px;
     }
     
-    .cart__contacts {
+    .card__contacts {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -2395,27 +2395,27 @@ a {
         border-radius: 20px;
     }
     
-    .cart__contacts h1 {
+    .card__contacts h1 {
         font-size: 15px;
         font-weight: 700;
         line-height: 18px;
         margin-bottom: 9px;
     }
     
-    .cart__contacts div {
+    .card__contacts div {
         display: flex;
         flex-direction: column;
         
         gap: 12px;
     }
     
-    .cart__contacts button {
+    .card__contacts button {
         margin: 0 auto;
         width: 171px;
         height: 41px;
     }
     
-    .cart__contacts-name {
+    .card__contacts-name {
         margin-top: 11px;
         font-size: 15px;
         font-weight: 400;
@@ -2423,21 +2423,21 @@ a {
     
     }
     
-    .cart__contacts-email {
+    .card__contacts-email {
         margin-top: 20px;
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
     }
     
-    .cart__contacts-marking {
+    .card__contacts-marking {
         margin-top: 10px;
         font-size: 9px;
         font-weight: 400;
         line-height: 12px;
     }
     
-    .cart__contacts-phone {
+    .card__contacts-phone {
         margin: 0 auto;
         max-width: 200px;
         margin-top: 30px;
@@ -2446,7 +2446,7 @@ a {
         line-height: 15px;
     }
     
-    .cart__characteristics {
+    .card__characteristics {
         display: flex;
         flex-direction: column;
         padding: 22px 9px;
@@ -2457,7 +2457,7 @@ a {
         border-radius: 20px;
     }
     
-    .cart__characteristics h1 {
+    .card__characteristics h1 {
         text-align: center;
         font-size: 15px;
         font-weight: 700;
@@ -2465,18 +2465,18 @@ a {
         margin-bottom: 20px;
     }
     
-    .cart__characteristics li {
+    .card__characteristics li {
         display: flex;
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
     }
     
-    .cart__characteristics span {
+    .card__characteristics span {
         margin-left: auto;
     }
     
-    .cart__services {
+    .card__services {
         display: flex;
         flex-direction: column;
         padding: 20px 20px 10px 20px;
@@ -2487,7 +2487,7 @@ a {
         border-radius: 20px;
     }
     
-    .cart__services h1 {
+    .card__services h1 {
         text-align: center;
         font-size: 15px;
         font-weight: 700;
@@ -2495,14 +2495,14 @@ a {
         margin-bottom: 20px;
     }
     
-    .cart__services li {
+    .card__services li {
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
         max-width: 250px;
     }
     
-    .cart__services button {
+    .card__services button {
         display: flex;
         justify-content: center;
         margin: 0 auto;
