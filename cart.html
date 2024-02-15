@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+
+            <div class="header__geolocation">
+                <img class="header__logo" src="./assets/image/logo.svg" alt="logo">
+
+
+                <div class="header__location-selector">
+                    <img class="header__geo-img" src="./assets/image/location.svg" alt="location">
+                    <select class="header__geo ">
+                        <option value="">Лазаревское</option>
+                        <option value="">Вишневка</option>
+                        <option value="">Волконка</option>
+                    </select>
+                </div>
+
+
+
+            </div>
+            <button class="header__button-object button-green">Добавить объект</button>
+
+            <div class="header__icons-authentication">
+                <div class="header__icons">
+                    <a class="header__comparison" href="">
+                        <img class="header__comparison-img" src="./assets/image/comparison.svg" alt="comparison">
+                    </a>
+                    <a class="header__like" href="">
+                        <img class="header__like-img" src="./assets/image/like.svg" alt="like">
+                    </a>
+                </div>
+                <div class="header__authentication">
+                    <button class="header__login-button button-green">Войти</button>
+                    <button class="header__registration-button button-green">Зарегистрироваться</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <nav class="nav">
+
+        <div class="container">
+
+            <div class="navbar">
+
+                <button class="nav__menu">
+                    <img src="./assets/image/burger-menu.svg" alt="" id="burger" class="menu-icon">
+                    <img src="./assets/image/cross.svg" alt="" class="close-icon">
+                </button>
+
+                <div class="nav__icons">
+                    <a class="nav__comparison" href="">
+                        <img class="nav__comparison-img" src="./assets/image/comparison-white.svg" alt="comparison">
+                    </a>
+                    <a class="nav__like" href="">
+                        <img class="nav__like-img" src="./assets/image/like-white.svg" alt="like">
+                    </a>
+                </div>
+
+                <div class="nav__user">
+
+                    <button class="nav__user-button">
+                        <img src="./assets/image/user.svg" alt="user">
+                    </button>
+
+                    <div class="nav__authentication">
+                        <div>
+                            <button class="nav__login-button button-green">Войти</button>
+                            <p>или</p>
+                            <button class="nav__registration-button button-green">Зарегистрироваться</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <ul class="nav__list" id="menu">
+
+                <li class="nav__item"><a href="#">Гостевые дома</a></li>
+                <li class="nav__item"><a href="#">Гостиницы</a></li>
+                <li class="nav__item"><a href="#">Отели</a></li>
+                <li class="nav__item"><a href="#">Частный сектор</a></li>
+                <li class="nav__item"><a href="#">Квартиры</a></li>
+                <li class="nav__item"><a href="#">Санатории</a></li>
+                <li class="nav__item"><a href="#">Недвижимость</a></li>
+                <li class="nav__item"><a href="#">Экскурсии</a></li>
+                <button class="nav__button-object button-blue ">Добавить объект</button>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <main class="main">
+        <section class="cart">
+            <div class="container">
+                <p class="cart-link">
+                    <a class="cart-link" href="">Главная</a>/
+                    <a class="cart-link" href="">Гостевые дома</a>
+                    /Частдый дом  «Виталий»
+                </p>
+                <div class="cart__content">
+
+
+                    <div class="cart-item">
+                        <h1 class="cart-item__title">Частный дом «Виталий»</h1>
+                        <div class="cart-item__details">
+                            <img class="cart-item__details-geo" src="./assets/image/geo-choic.svg" alt="">
+                            <p class="cart-item__details-street">п. Лазаревское, ул. Белинского, 3</p>
+                            <p class="cart-item__details-map">Смотреть на карте</p>
+                            <div class="cart-item__details-comparison-item">
+                                <img class="cart-item__details-comparison" src="./assets/image/comparison-choice.svg"
+                                    alt="">
+                                <p class="">В сравнение</p>
+                            </div>
+                            <div class="cart-item__details-like-item">
+                                <img class="cart-item__details-like" src="./assets/image/like-choice.svg" alt="">
+                                <p>В избранное</p>
+                            </div>
+                            <p class="cart-item__details-testimonial">Отзывы<span> 567</span></p>
+                            <div class="cart-item__rating">
+                                <img src="./assets/image/star.svg" alt="">
+                                <img src="./assets/image/star.svg" alt="">
+                                <img src="./assets/image/star.svg" alt="">
+                                <img src="./assets/image/star.svg" alt="">
+                                <img src="./assets/image/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart__main">
+                        <div class="cart-navigation">
+                            <div class="cart-navigation__item">
+                                <div class="cart-navigation__details">
+                                    <div class="cart-navigation__details-img-block">
+                                        <img class="cart-navigation__details-img" src="./assets/image/cart.svg" alt="">
+                                    </div>
+                                    <div class="cart-navigation__details-counter">
+                                        <p>2 / 21</p>
+                                    </div>
+                                    <div class="cart-item__details-comparison-item-mobile">
+                                        <img class="cart-item__details-comparison-mobile" src="./assets/image/comparison-choice.svg"alt="">
+                                            <img class="cart-item__details-like-mobile" src="./assets/image/like-choice.svg" alt="">
+
+                                    </div>
+                                    
+                                        
+                                </div>
+                                
+
+                                <div class="cart-navigation__buttons">
+                                    <button><img src="./assets/image/arrow-right.svg" alt=""></button>
+                                    <button><img src="./assets/image/arrow-left.svg" alt=""></button>
+                                </div>
+                            </div>
+                            <div class="cart-navigation__details-img-mobile" >
+                                <img class="cart-item__details-geo-mobile" src="./assets/image/geo-choic.svg" alt="">
+                                <p class="cart-item__details-street-mobile">п. Лазаревское, ул. Белинского, 3</p>
+                            </div>
+                            <ul class="cart-navigation__list">
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                                <li>
+                                    <div><img src="./assets/image/cart.svg" alt=""></div>
+                                </li>
+                            </ul>
+                            <div class="cart-navigation__text">
+                                <p>Гостевой дом (частный дом) «Виталий» расположен на ул. Белинского в Лазаревском
+                                    (курорт Сочи), всего в 120 метрах от моря и 15 минутах ходьбы от ж/д станции
+                                    «Лазаревская».
+                                    <br>
+                                    До центра курорта — 20 минут пешей прогулки. Дом располагается рядом с летним кафе
+                                    «Минутка», множеством экскурсионных бюро и разнообразной туристической
+                                    инфраструктурой.
+                                    <br><br>
+                                    Поблизости также находятся: аквапарк, дельфинарий, пингвинарий, океонариум.
+                                    Продуктовые и промтоварные магазины расположены в шаговой доступности.
+                                    Рядом большое количество сувенирных лавок, шашлычных и курортных товаров.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart__info">
+                            <div class="cart__contacts">
+                                <h1>Контакты</h1>
+                                <div>
+                                    <button class="button-green">8(918)… Показать</button>
+                                    <button class="button-green">WhatsApp</button>
+                                </div>
+                                <p class="cart__contacts-name">Виталий Георгиевич</p>
+                                <p class="cart__contacts-email">vit-arakelov@yandex.ru</p>
+                                <p class="cart__contacts-marking">с пометкой «С сайта про Лазаревское»</p>
+                                <p class="cart__contacts-phone">При звонке просьба ссылаться на портал ProLazarevskoe.ru
+                                </p>
+                            </div>
+                            <div class="cart__characteristics">
+                                <h1>Характеристики</h1>
+                                <ul>
+                                    <li>Wi-Fi<span>Да</span></li>
+                                    <li>Бассейн<span>Нет</span></li>
+                                    <li>Питание<span>Без питания</span></li>
+                                    <li>Кухня<span>Нет</span></li>
+                                    <li>Детская площадка<span>Нет</span></li>
+                                    <li>Санузел в номере<span>Да</span></li>
+                                    <li>Дворовая территория<span>Да</span></li>
+                                    <li>ТВ в номере<span>Нет</span></li>
+                                    <li>Сплит-система<span>Да</span></li>
+                                    <li>Холодильник<span>Да</span></li>
+                                    <li>Автостоянка<span>Да</span></li>
+                                    <li>Собственный пляж<span>Нет</span></li>
+                                    <li>Баня, сауна<span>Нет</span></li>
+                                    <li>Вид на море<span>Да</span></li>
+                                    <li>Расположен<span>Лазаревское</span></li>
+                                    <li>До моря, минуты<span>3 минуты</span></li>
+                                </ul>
+                            </div>
+                            <div class="cart__services">
+                                <h1>Дополнительные услуги</h1>
+                                <ul>
+                                    <li>Автостоянка</li>
+                                    <li>Мангал</li>
+                                    <li>Утюг, гладильная доска</li>
+                                    <li>Стиральная машина (платно)</li>
+                                    <li>Смена постельного белья 1 раз в пять дней</li>
+                                    <li>СВЧ</li>
+                                    <li>Холодильники</li>
+                                </ul>
+                                <button class="button-green">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__social">
+                    <h1>Мы в соцсетях!</h1>
+                    <div>
+                        <a class="social-link" href="#">
+                            <img src="./assets/image/OK.svg" alt="OK">
+                            <span>OK</span>
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="./assets/image/VK.svg" alt="VK">
+                            <span>VK</span>
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="./assets/image/YouTube.svg" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <img src="./assets/image/logo.svg" alt="Логотип">
+                    <p>Внимание: портал ProLazarevskoe.ru не является системой on-line бронирования.Здесь вы можете
+                        связаться с владельцами гостевых домов и отелей, частного сектора и квартир.</p>
+                </div>
+                <div class="footer__links">
+                    <h1>О сайте</h1>
+                    <ul>
+                        <li><a href="#"><button class="footer-btn button-green">Добавить объект</button></a></li>
+                        <li><a href="#"><button class="footer-btn">Личный кабинет</button></a></li>
+                        <li><a href="#"><button class="footer-btn">Регистрация на сайте</button></a></li>
+                        <li><a href="#"><button class="footer-btn">Контакты</button></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="company">Copyright © Отдых в Лазаревском 2023 — Гостиницы, гостевые дома, частный сектор, квартиры
+                без посредников.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="./assets/js/lib/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/lib/slick.min.js"></script>
+
+    <script src="./assets/js/burger-menu.js"></script>
+    <script src="./assets/js/user-button.js"></script>
+</body>
+
+</html>
