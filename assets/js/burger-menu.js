@@ -10,3 +10,4 @@ document.addEventListener('DOMContentLoaded', function () {
         closeIcon.classList.toggle('hide');
     });
 });
+
