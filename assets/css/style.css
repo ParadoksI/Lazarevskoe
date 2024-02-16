@@ -103,6 +103,7 @@ a {
     }
 
     .header__logo {
+        
         margin-right: 20px;
     }
 
@@ -152,6 +153,7 @@ a {
 
     .header__logo {
         width: 50%;
+        max-height: 65px;
     }
 
     .header__location-selector {
@@ -2445,11 +2447,10 @@ a {
 
 /* MOBILE */
 @media only screen and (max-width: 1200px) {
-    .card {
-        margin-top: 40px;
-    }
+    
 
-    .card-link {
+    .link {
+        margin-top: 40px;
         color: #222222;
         font-size: 12px;
         font-weight: 400;
@@ -2463,7 +2464,7 @@ a {
 
 
     .card-item__title {
-        margin-top: 40px;
+        
         color: var(--blue);
         font-size: 25px;
         font-weight: 800;
