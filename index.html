@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,14 +17,12 @@
 </head>
 
 <body>
-    <div class="container">
 
+
+    <div class="nav-head">
         <header class="header">
-
             <div class="header__geolocation">
                 <img class="header__logo" src="./assets/image/logo.svg" alt="logo">
-
-
                 <div class="header__location-selector">
                     <img class="header__geo-img" src="./assets/image/location.svg" alt="location">
                     <select class="header__geo ">
@@ -32,12 +31,8 @@
                         <option value="">Волконка</option>
                     </select>
                 </div>
-
-
-
             </div>
             <button class="header__button-object button-green">Добавить объект</button>
-
             <div class="header__icons-authentication">
                 <div class="header__icons">
                     <a class="header__comparison" href="">
@@ -53,62 +48,48 @@
                 </div>
             </div>
         </header>
-    </div>
-
-    <nav class="nav">
-
-        <div class="container">
-
-            <div class="navbar">
-
-                <button class="nav__menu">
-                    <img src="./assets/image/burger-menu.svg" alt="" id="burger" class="menu-icon">
-                    <img src="./assets/image/cross.svg" alt="" class="close-icon">
-                </button>
-
-                <div class="nav__icons">
-                    <a class="nav__comparison" href="">
-                        <img class="nav__comparison-img" src="./assets/image/comparison-white.svg" alt="comparison">
-                    </a>
-                    <a class="nav__like" href="">
-                        <img class="nav__like-img" src="./assets/image/like-white.svg" alt="like">
-                    </a>
-                </div>
-
-                <div class="nav__user">
-
-                    <button class="nav__user-button">
-                        <img src="./assets/image/user.svg" alt="user">
+        <nav class="nav">
+            <div class="container">
+                <div class="navbar">
+                    <button class="nav__menu">
+                        <img src="./assets/image/burger-menu.svg" alt="" id="burger" class="menu-icon">
+                        <img src="./assets/image/cross.svg" alt="" class="close-icon">
                     </button>
-
-                    <div class="nav__authentication">
-                        <div>
-                            <button class="nav__login-button button-green">Войти</button>
-                            <p>или</p>
-                            <button class="nav__registration-button button-green">Зарегистрироваться</button>
+                    <div class="nav__icons">
+                        <a class="nav__comparison" href="">
+                            <img class="nav__comparison-img" src="./assets/image/comparison-white.svg" alt="comparison">
+                        </a>
+                        <a class="nav__like" href="">
+                            <img class="nav__like-img" src="./assets/image/like-white.svg" alt="like">
+                        </a>
+                    </div>
+                    <div class="nav__user">
+                        <button class="nav__user-button">
+                            <img src="./assets/image/user.svg" alt="user">
+                        </button>
+                        <div class="nav__authentication">
+                            <div class="nav__func">
+                                <button class="nav__login-button button-green">Войти</button>
+                                <p>или</p>
+                                <button class="nav__registration-button button-green">Зарегистрироваться</button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
+                <ul class="nav__list" id="menu">
+                    <li class="nav__item"><a href="#">Гостевые дома</a></li>
+                    <li class="nav__item"><a href="#">Гостиницы</a></li>
+                    <li class="nav__item"><a href="#">Отели</a></li>
+                    <li class="nav__item"><a href="#">Частный сектор</a></li>
+                    <li class="nav__item"><a href="#">Квартиры</a></li>
+                    <li class="nav__item"><a href="#">Санатории</a></li>
+                    <li class="nav__item"><a href="#">Недвижимость</a></li>
+                    <li class="nav__item"><a href="#">Экскурсии</a></li>
+                    <button class="nav__button-object button-blue ">Добавить объект</button>
+                </ul>
             </div>
-
-            <ul class="nav__list" id="menu">
-
-                <li class="nav__item"><a href="#">Гостевые дома</a></li>
-                <li class="nav__item"><a href="#">Гостиницы</a></li>
-                <li class="nav__item"><a href="#">Отели</a></li>
-                <li class="nav__item"><a href="#">Частный сектор</a></li>
-                <li class="nav__item"><a href="#">Квартиры</a></li>
-                <li class="nav__item"><a href="#">Санатории</a></li>
-                <li class="nav__item"><a href="#">Недвижимость</a></li>
-                <li class="nav__item"><a href="#">Экскурсии</a></li>
-                <button class="nav__button-object button-blue ">Добавить объект</button>
-
-            </ul>
-        </div>
-
-    </nav>
+        </nav>
+    </div>
 
     <main class="main">
 
@@ -123,17 +104,32 @@
                     </p>
                 </div>
                 <div class="vacation__inputs">
-                    <div class="vacation__input">
+                    <div class="vacation__input" id="checkInInput">
                         <h1>Заезд</h1>
-                        <div>1 апр.</div>
+                        <input type="text" placeholder="Выберите дату" class="check-in">
                     </div>
-                    <div class="vacation__input">
+                    <div class="vacation__input" id="checkOutInput">
                         <h1>Выезд</h1>
-                        <div>30 апр.</div>
+                        <input type="text" placeholder="Выберите дату" class="check-out">
                     </div>
-                    <div class="vacation__input">
+                    <div class="vacation__people">
                         <h1>Гостей</h1>
-                        <div>2 Гостей</div>
+                        <div class="vacation__people__count" id="textPeople">1 Гость</div>
+                        <div class="vacation__people__func " id="vac-func">
+                            <button id="decrementBtn">
+                                -
+                            </button>
+                            <div>
+                                <p class="vacation__people__disc">Добавить гостей</p>
+                                
+                            </div>
+                            
+                            <button id="incrementBtn">
+                                +
+                            </button>
+                            <p class="vacation__close" id="closePeopleMenu">&#10006;</p>
+                        </div>
+                        
                     </div>
                     <button class="vacation__button button-blue ">Найти</button>
                 </div>
@@ -825,6 +821,54 @@
                         </p>
                         <span>Читать весь отзыв</span>
                     </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-rating">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                        </div>
+                        <p>
+                            Здравствуйте! В июле 2015 года мы решили отдохнуть в посёлке Лазаревское (под Сочи).
+                            Нам этот
+                            посёлок очень хвалили и советовали друзья, бывавшие там уже дважды. Отдыхать мы собрались
+                            большой компанией: я, мой муж, два наших…
+                        </p>
+                        <span>Читать весь отзыв</span>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-rating">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                        </div>
+                        <p>
+                            Здравствуйте! В июле 2015 года мы решили отдохнуть в посёлке Лазаревское (под Сочи).
+                            Нам этот
+                            посёлок очень хвалили и советовали друзья, бывавшие там уже дважды. Отдыхать мы собрались
+                            большой компанией: я, мой муж, два наших…
+                        </p>
+                        <span>Читать весь отзыв</span>
+                    </div>
+                    <div class="feedback__item">
+                        <div class="feedback__item-rating">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                            <img class="feedback__item-star" src="./assets/image/star.svg" alt="">
+                        </div>
+                        <p>
+                            Здравствуйте! В июле 2015 года мы решили отдохнуть в посёлке Лазаревское (под Сочи).
+                            Нам этот
+                            посёлок очень хвалили и советовали друзья, бывавшие там уже дважды. Отдыхать мы собрались
+                            большой компанией: я, мой муж, два наших…
+                        </p>
+                        <span>Читать весь отзыв</span>
+                    </div>
 
                 </div>
 
@@ -875,8 +919,8 @@
 
 
     <footer class="footer">
-        <div class="container" >
-            <div class="footer__content" >
+        <div class="container">
+            <div class="footer__content">
                 <div class="footer__social">
                     <h1>Мы в соцсетях!</h1>
                     <div>
@@ -909,16 +953,19 @@
                     </ul>
                 </div>
             </div>
-            <p class="company" >Copyright © Отдых в Лазаревском 2023 — Гостиницы, гостевые дома, частный сектор, квартиры без посредников.</p>
+            <p class="company">Copyright © Отдых в Лазаревском 2023 — Гостиницы, гостевые дома, частный сектор, квартиры
+                без посредников.</p>
         </div>
     </footer>
-    
+
 
 
     <script src="./assets/js/lib/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/lib/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
 
-    <script src="./assets/js/feedback-slider.js"></script>
+    <script src="./assets/js/filters-main.js"></script>
     <script src="./assets/js/script-slider.js"></script>
     <script src="./assets/js/burger-menu.js"></script>
     <script src="./assets/js/user-button.js"></script>
