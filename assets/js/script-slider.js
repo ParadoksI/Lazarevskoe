@@ -3,7 +3,7 @@ $(document).ready(function () {
 
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 10000,
 
         responsive: [
             {
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 10000,
 
         responsive: [
             {
@@ -69,32 +69,5 @@ $(document).ready(function () {
         ]
     });
 
-    $('.feedback__slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // autoplay: true,
-        autoplaySpeed: 5000,
-        centerMode : true,
-        
-        responsive : [
-            { 
-                breakpoint : 1199,
-                settings : { 
-                    arrows : false ,
-                    dots : true,
-                    slidesToShow: 1,
-                    centerPadding : "50px 30px 0px ",
-                }
-            },
-            { 
-                breakpoint : 9999,
-                settings : {
-                    arrows : true,
-                    dots: false,
-                    slidesToShow: 3,
-                    centerPadding : "0px",
-                }
-            }
-        ]
-    });
+    
 });
