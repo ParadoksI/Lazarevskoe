@@ -3,15 +3,18 @@ $(document).ready(function() {
     
     $('.catalog__list .choice-item:gt(3)').hide();
 
-    $('.catalog__button').click(function() {
+    function showNextItems() {
         var hiddenItems = $('.catalog__list .choice-item:hidden');
-
         if (hiddenItems.length > 0) {
-            hiddenItems.slice(0, 4).slideDown('slow');
-            
-            
-        } else {
-            $(this).hide();
+            hiddenItems.slice(0, 4).slideDown('slow', function() {
+                if ($('.catalog__list .choice-item:hidden').length === 0) {
+                    $('.catalog__button').hide();
+                }
+            });
         }
-    });
+    }
+
+    $('.catalog__button').click(showNextItems);
+
+    
 });

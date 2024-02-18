@@ -2464,6 +2464,94 @@ a {
 
     }
 
+    /* =======================БРАНИРОВАНЫЕЕЕЕЕ=================== */
+    .blur-armor { 
+        z-index: 110;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: 100vw;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+    
+    .armor { 
+        position: fixed;
+        z-index: 111;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 30px;
+        width: 75%;
+        padding: 50px;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+
+    .armor__container { 
+        position: relative;
+    }
+
+    .armor__head { 
+        display: flex;
+        justify-content: center;
+    }
+
+    .armor__title { 
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .armor__close__button { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .armor__close__button:hover { 
+        color: var(--blue);
+        font-size: 21px;
+    }
+
+    .armor__inputs { 
+        margin-top: 113px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .input__set { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+    }
+
+    .input__set input { 
+        width: 48%;
+        padding: 15px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,1);
+    }
+
+    .armor__input__message { 
+        margin-top: 30px;
+    }
+
+    .armor__input__message input { 
+        padding: 15px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,1);
+        width: 98.5%;
+        height: 174px;
+    }
+
+    /* ======================================================= */
+
     .card-item__details-street-mobile {
         display: none;
     }
@@ -2840,6 +2928,94 @@ a {
         margin-top: 20px;
         max-width: 171px;
 
+    }
+
+    .blur-armor { 
+        z-index: 1100;
+        position: fixed;
+        top: 0px;
+
+        width: 100vw;
+        height: 100vw;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+    
+    .armor { 
+        position: fixed;
+        z-index: 1110;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 30px;
+        width: 90%;
+        padding: 15px;
+        backdrop-filter: blur(5px);
+        display: none;
+        overflow-y: scroll;
+    }
+
+    .armor__container { 
+        position: relative;
+    }
+
+    .armor__head { 
+        display: flex;
+        justify-content: center;
+    }
+
+    .armor__title { 
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .armor__close__button { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .armor__close__button:hover { 
+        color: var(--blue);
+        font-size: 21px;
+    }
+
+    .armor__inputs { 
+        margin-top: 30px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input__set { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .input__set input { 
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,1);
+    }
+
+    .armor__input__message { 
+        margin-top: 20px;
+    }
+
+    .armor__input__message input { 
+        padding: 15px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,1);
+        width: 98.5%;
+        height: 174px;
     }
 }
 
@@ -3298,6 +3474,46 @@ a {
         font-weight: 400;
         line-height: 22px;
     }
+
+    #choice-like { 
+        cursor: pointer;
+    }
+
+    .favor-item { 
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5); 
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        z-index: 9999;
+    }
+
+    .message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 10px;
+        
+        z-index: 10000;
+    }
+
+    .message button { 
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        background-color: rgba(140, 247, 203, 1);
+        border-radius: 10px;
+    }
 }
 
 /* MOBILE */
@@ -3316,6 +3532,48 @@ a {
         font-size: 15px;
         font-weight: 400;
         line-height: 18px;
+    }
+
+    #choice-like { 
+        cursor: pointer;
+    }
+
+    .favor-item { 
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5); 
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+        z-index: 9999;
+    }
+
+    .message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 9px;
+        text-align: center;
+        line-height: 11px;
+        z-index: 10000;
+    }
+
+    .message button { 
+        margin-top: 10px;
+        width: 100%;
+        height: 26px;
+        background-color: rgba(140, 247, 203, 1);
+        border-radius: 10px;
     }
 }
 
