@@ -8,6 +8,10 @@
     border-radius: 30px;
 }
 
+.google-map {
+    width: 100%;
+}
+
 .eat {
     margin-top: 60px;
 }
