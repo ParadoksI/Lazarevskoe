@@ -190,6 +190,26 @@ a {
         display: none;
     }
 
+    .nav__item { 
+        position: relative;
+    }
+
+    .nav__item::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10%;
+        width: 0;
+        height: 2px;
+        background-color: #fff; /* Цвет границы */
+        transition: width 0.3s ease, left 0.3s ease; /* Анимация из центра */
+    }
+    
+    .nav__item:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
     .nav__button-object {
         display: none;
     }
